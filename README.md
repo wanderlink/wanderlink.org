@@ -31,10 +31,12 @@ Noted con: This puts some amount of sorting work on the user and, when errors in
 
 ### Approach 3: Nested "wander" children
 Example:
-`<a href="https://example.org/fallback">
+```
+<a href="https://example.org/fallback">
   Check it out
   <wander href="https://example.org/link1"/>
   <wander href="https://example.org/link2"/>
-</a>`
+</a>
+```
 
 Noted con: This syntax is less consistent with the existing spec, messy to parse and requires more user effort to define.
