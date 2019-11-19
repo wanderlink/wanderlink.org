@@ -17,15 +17,11 @@ In all of these cases if the browser supports Wanderlinks, clicking this anchor 
 Example:
 `<a href="https://example.org/fallback" wander="https://example.org/link1" wander="https://example.org/link2">Check it out</a>`
 
-If the browser supports Wanderlinks, clicking this link would send the user to link1, with navigation controls to go to link2. Link2 is the end of the Wanderlink. The fallback is only used if the browser does not support Wanderlinks.
-
 Noted con: There is [existing precedent against this approach](https://www.w3.org/TR/1999/REC-html401-19991224/struct/links.html#h-12.2.3) under the "ILLEGAL EXAMPLE" section.
 
 ### Approach 2: Repeating numbered "wander" attribute
 Example:
 `<a href="https://example.org/fallback" wander="https://example.org/link1" wander1="https://example.org/link2">Check it out</a>`
-
-If the browser supports Wanderlinks, clicking this link would send the user to link1, with navigation controls to go to link2. Link2 is the end of the Wanderlink. The fallback is only used if the browser does not support Wanderlinks.
 
 Noted con: This puts some amount of sorting work on the user and, when errors inevitably happen, the browser will probably automatically correct common errors by simply taking definition order. As such, this approach seems to be mainly to avoid the duplicate attribute taboo by only costing, not adding, user value. 
 
