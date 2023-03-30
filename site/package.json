@@ -1,0 +1,14 @@
+{
+	"name": "wanderlink.org",
+	"version": "0.0.1",
+	"description": "The wanderlink.org website for building wanderlinks with optional centrally hosted fallbacks.",
+	"author": "Ivan VenOsdel ivan@wanderlink.org",
+	"main": "server.js",
+	"scripts": {
+		"start": "nodemon --inspect=127.0.0.1 server.js",
+		"start:prod": "node server.js"
+	},
+	"dependencies": {
+		"express": "*"
+	}
+}
